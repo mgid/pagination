@@ -1,0 +1,43 @@
+{
+    "name": "mgid/pagination",
+    "type": "library",
+    "description": "Pagination Component",
+    "keywords": ["pagination", "doctrine", "orm", "odm"],
+    "homepage": "https://github.com/mgid/pagination",
+    "license": "MIT",
+    "authors": [
+        {"name": "Dmitry Khaperets", "email": "dmitry.khaperets@mgid.com"}
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mgid\\Component\\Pagination\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mgid\\Component\\Pagination\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "symfony/validator": "^5.1"
+    },
+    "require-dev": {
+        "doctrine/mongodb-odm": "^2.1",
+        "doctrine/orm": "^2.7",
+        "phpstan/phpstan": "^0.12",
+        "phpunit/php-code-coverage": "^9.1",
+        "phpunit/phpunit": "^9.3",
+        "symfony/dependency-injection": "^5.1"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}

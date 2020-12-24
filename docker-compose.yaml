@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+    php:
+        build: .
+        volumes:
+            - ./:/app
+        depends_on:
+            - mongo.intra
+
+    mongo.intra:
+        image: mongo
+        restart: 'no'
